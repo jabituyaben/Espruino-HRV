@@ -24,6 +24,7 @@ a few other notes:
 Random images of the signal at different stages of processing - these aren't all the same part of the signal I've just quickly taken screenshots of line graphs.
 
 <ins>Raw Reading</ins>
+usually it isn't as ragged as this but it can be
 
 ![raw signal](./images/raw_signal.PNG)
 
