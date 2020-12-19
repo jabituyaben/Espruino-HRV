@@ -41,5 +41,5 @@ a few other notes:
 ![rolling avg](./images/clipping.PNG)
 
 <ins>Peaks found</ins>
-You can see here the algorythm appears to correctly identify pretty much every relevant peak from the PPG data.
+You can see here the algorythm appears to correctly identify pretty much every relevant peak from the PPG data. It's also sadly clear that I have a crap HRV right now.
 ![rolling avg](./images/gaps.PNG)
