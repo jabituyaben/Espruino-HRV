@@ -1,5 +1,5 @@
-# EspruinoHRV
-Espruino based HRV monitor using the Bangle.JS, should be quite easy to transfer for use on other HR trackers that can run espruino.
+# Espruino HRV (Heart Rate Variability)
+Espruino based HRV monitor using the Bangle.JS. This should be quite easy to transfer for use on other HR trackers that can run espruino.
 
 File contents:
 -HRV.js
