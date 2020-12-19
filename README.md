@@ -21,6 +21,8 @@ a few other notes:
 1. it might be possible to get away with just linear interpolation or something faster but similar than what i've done for steps 3 & 4
 2. sometimes the processing loop gets executed twice and that's probably because of my ignorance of asynchronous programming in Javascript rather than an actual bug. May need to revise the event handling to fix this - it doesn't actually affect the end result and the final readings though.
 
+Random images of the signal at different stages of processing - these aren't all the same part of the signal I've just quickly taken screenshots of line graphs.
+
 <ins>Raw Reading</ins>
 
 ![raw signal](./images/raw_signal.PNG)
