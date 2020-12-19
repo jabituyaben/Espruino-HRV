@@ -1,5 +1,5 @@
 # Espruino HRV (Heart Rate Variability)
-Espruino based HRV monitor using the Bangle.JS. This should be quite easy to transfer for use on other HR trackers that can run espruino.
+Espruino based HRV monitor using the Bangle.JS. This should be quite easy to transfer for use on other HR trackers that can run espruino. I've been doing some initial checking against a Polar H10 chest strap and it's generally giving readings in the same ballpark but most of the time it does give slightly lower than what the Polar says so will look to see if anything needs tweaking etc.
 
 File contents:
 1. HRV.js: script to be uploaded to the Bangle.js
@@ -15,7 +15,7 @@ Essentially the HRV.js works this way:
 6.	Find all peaks – I’ve used a slope inversion algorythm for this
 7.	Standard deviation of the gaps between peaks and then mutiply by the frequency to get HRV. The script also calculates HR based on gap sizes and then displays these details
 
-I'd like to have taken more readings than just 20 seconds but there are memory limitations to contend with, to get around this it's quite easy to just take several readings and do an average for yourself; taking several HRV readings over 5mins or so is generally recommended anyway.
+I'd like to have taken more readings than just 20 seconds but there are memory limitations to contend with, to get around this it's quite easy to just take several readings and do an average for yourself; taking several HRV readings over 5mins or so when resting is generally recommended anyway to get a meaningful metric.
 
 a few other notes:
 1. it might be possible to get away with just linear interpolation or something faster but similar than what i've done for steps 3 & 4
