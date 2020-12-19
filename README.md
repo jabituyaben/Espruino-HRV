@@ -18,8 +18,8 @@ Essentially the HRV.js works this way:
 I'd like to have taken more readings than just 20 seconds but there are memory limitations to contend with, to get around this it's quite easy to just take several readings and do an average for yourself; taking several HRV readings over 5mins or so is generally recommended anyway.
 
 a few other notes:
--it might be possible to get away with just linear interpolation or something faster but similar than what i've done for steps 3 & 4
--sometimes the processing loop gets executed twice and that's probably because of my ignorance of asynchronous programming in Javascript rather than an actual bug. May need to revise the event handling to fix this - it doesn't actually affect the end result and the final readings though.
+1. it might be possible to get away with just linear interpolation or something faster but similar than what i've done for steps 3 & 4
+2. sometimes the processing loop gets executed twice and that's probably because of my ignorance of asynchronous programming in Javascript rather than an actual bug. May need to revise the event handling to fix this - it doesn't actually affect the end result and the final readings though.
 
 <ins>Raw Reading</ins>
 
