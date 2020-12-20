@@ -165,6 +165,7 @@ function calculate_HRV() {
     }
     gap_average = average(temp_array);
     var calculatedHR = (sample_frequency*60)/(gap_average/2);
+    g.flip();
     g.clear();
     //var display_stdv = StandardDeviation(pulse_array).toFixed(1);
     var HRV = (StandardDeviation(temp_array) * (1 / (sample_frequency * 2) * 1000)).toFixed(0);
