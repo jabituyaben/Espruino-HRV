@@ -180,7 +180,7 @@ Bangle.setHRMPower(1);
 
 Bangle.on('HRM', function (hrm) {
         g.flip();
-        if (first_signals < 7) {
+        if (first_signals < 5) {
             g.clear();
             g.drawString("setting up...\nremain still " + first_signals * 20 + "%", 120, 120);
             first_signals++;
@@ -189,7 +189,7 @@ Bangle.on('HRM', function (hrm) {
             BPM_array = hrm.raw;
             if(hrm.bpm > hr_min && hrm.bpm < hr_max)
                 heartrate.push(hrm.bpm);
-            if (pulsecount < 5) {
+            if (pulsecount < 7) {
                 for (let i = 0; i < 256; i++) {
                     file.write(BPM_array[i]+","+"\n");
                     storeMyData(BPM_array[i], 0);
