@@ -1,7 +1,7 @@
 # Espruino HRV (Heart Rate Variability)
 Espruino based HRV monitor using the Bangle.JS. This should be quite easy to transfer for use on other HR trackers that can run espruino. I've been doing some initial checking against a Polar H10 chest strap and it's generally giving readings in the same ballpark but most of the time, for me, it does give slightly lower than what the Polar says so will look to see if anything needs tweaking etc. I've also tested it with a couple other people who are much fitter and the app correctly reports higher HRV readings.
 
-![screenshot](./images/image2.png)
+![screenshot](./images/image3.png)
 
 File contents:
 1. HRV.js: script to be uploaded to the Bangle.js
