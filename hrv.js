@@ -11,8 +11,8 @@ var debugging = true;
 var first_signals = 0; // ignore the first several signals
 var heartrate = [];
 var BPM_array = [];
-var raw_HR_array = new Float32Array(2048);
-var alternate_array = new Float32Array(2048);
+var raw_HR_array = new Float32Array(1024);
+var alternate_array = new Float32Array(3072);
 var pulse_array = [];
 var pulsecount = 0;
 var cutoff_threshold = 0.5;
@@ -180,7 +180,7 @@ Bangle.setHRMPower(1);
 
 Bangle.on('HRM', function (hrm) {
         g.flip();
-        if (first_signals < 5) {
+        if (first_signals < 7) {
             g.clear();
             g.drawString("setting up...\nremain still " + first_signals * 20 + "%", 120, 120);
             first_signals++;
@@ -195,9 +195,9 @@ Bangle.on('HRM', function (hrm) {
                     storeMyData(BPM_array[i], 0);
                 }
             g.clear();
-            g.drawString("logging: " + ((pulsecount/4)*100).toFixed(0) + "%", 120, 120);
+            g.drawString("logging: " + ((pulsecount/6)*100).toFixed(0) + "%", 120, 120);
             }
-            if(pulsecount == 4)
+            if(pulsecount == 6)
                 turn_off();
             pulsecount++;
         }
